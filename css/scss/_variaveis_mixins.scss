@@ -1,0 +1,32 @@
+// fontes
+$cor-01: #202020;
+$cor-02: #5f5f5f;
+$cor-03: #ffffff;
+$cor-04: #e0dede;
+$cor-05: #D1DFDE;
+// $cor-06: #2a7288;
+$cor-06: #da5252;
+
+// breakpoints para os @mixins de media query
+$large-device: 1100px;
+$medium-device: 760px;
+$small-device: 480px;
+
+// @mixins de media-query
+@mixin device($size) {
+    @if $size == large {
+        @media screen and (min-width: $large-device) {
+            @content;
+        }
+    } 
+    @else if $size == medium {
+        @media screen and (min-width: $medium-device) and (max-width: ($large-device - 1)){
+            @content;
+        }
+    }
+    @else if $size == small {
+        @media screen and (max-width: ($medium-device - 1)){
+            @content;
+        }
+    }
+}

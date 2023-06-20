@@ -1,0 +1,143 @@
+html {
+    scroll-behavior: smooth;
+    background-color: $cor-03;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    padding-top: 35px;
+    background-color: $cor-03;
+
+    &::after {
+        content: '';
+        width: 150PX;
+        height: 1px;
+        border-radius: 55px;
+        background-color: $cor-06;
+    }
+
+    .initial {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+
+
+        @include device(small) {
+            gap: 10px;
+        }
+    
+        img {
+            width: 100px;
+            @include device(small) {
+                width: 90px;
+            }
+        }
+    
+        h1 {
+            font-size: 1.3em;
+            letter-spacing: .4em;    
+            font-weight: 400;
+            color: $cor-01;
+
+            @include device(medium) {
+                font-size: 1.4em;
+            }
+            @include device(small) {
+                font-size: 1.4em;
+            }
+        }
+
+        p {
+            color: $cor-06;
+            font-size: .8em;
+            letter-spacing: .15em;  
+            font-weight: 600;
+        }
+    }
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+
+    @include device(small) {
+        gap: 20px;
+    }
+    
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        li {
+            color: $cor-02;
+            transition: .3s;
+
+
+            &:hover {
+                cursor: pointer;
+                color: $cor-01;
+                transition: .3s;
+            }
+
+            @include device(medium) {
+                font-size: 1.2em;
+            }
+            @include device(small) {
+                font-size: 1.2em;
+            }
+        }
+
+    }
+    
+    .social-media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        color: $cor-02;
+        transition: .3s;
+
+        i {
+            font-size: 1.2em;
+            &:hover {
+                cursor: pointer;
+                color: $cor-06;
+                transition: .3s;
+            }
+
+            @include device(medium) {
+                font-size: 1.4em;
+            }
+            @include device(small) {
+                font-size: 1.4em;
+            }
+        }
+    }
+} 
+
+a {
+    transition: .3s;
+    color: $cor-02;
+
+    &:visited,
+    &:active {
+        color: $cor-02;
+    }
+
+    &:hover {
+        color: $cor-01;
+        transition: .3s;
+    }
+
+
+}

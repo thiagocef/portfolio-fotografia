@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+@import '_variaveis_mixins';
+@import '_grid';
+@import '_header';
+@import '_main';
+@import '_sobre';
+@import '_paralax';
+@import '_depoimentos';
+@import '_contato';
+@import '_footer';
+@import '_scroll_bar';
+
+[data-anime="columm-2"] {
+    opacity: 0;
+    transition: 1.3s;
+    transform: translateY(70px);
+}
+  
+[data-anime="columm-2"].show-element-2 {
+    opacity: 1;
+    transform: translateY(0);
+
+}
+
+[data-anime="columm-1"] {
+    opacity: 0;
+    transition: 1.3s;
+    transform: translateX(-40px);
+
+}
+  
+[data-anime="columm-1"].show-element-1 {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+[data-anime="columm-3"] {
+    opacity: 0;
+    transition: 1.3s;
+    transform: translateX(40px);
+  }
+  
+[data-anime="columm-3"].show-element-3 {
+    opacity: 1;
+    transform: translateX(0);
+}

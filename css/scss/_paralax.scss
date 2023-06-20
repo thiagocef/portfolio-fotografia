@@ -1,0 +1,17 @@
+.paralax-container {
+        height: 80vh;
+        background-color: rgb(91, 91, 163);
+        background-image: url("/img/capas/horizontais/bebe-h.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        filter: brightness(0.40);
+        // contrast(0.41) grayscale(0.85)
+
+        transition: .4s;
+        &:hover {
+                filter: brightness(0.60);
+                transition: .4s;
+        }
+}

@@ -1,0 +1,16 @@
+footer {
+    color: $cor-02;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid $cor-03;
+    line-height: 5em;
+    transition: .3s;
+
+    a {
+        &:hover {
+            color: $cor-01;
+            transition: .3s;
+        }
+    }
+}

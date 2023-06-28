@@ -3,25 +3,30 @@
     justify-content: center;
     align-items: center;
     gap: 100px;
-    padding: 170px;
+    padding: 150px;
     background-color: $cor-05;
+    margin-top: 50px;
+
 
     @include device(medium) {
         flex-direction: column-reverse;
         gap: 30px;
-        margin: 100px;
-        
+        padding: 100px;
     }
     @include device(small) {
         flex-direction: column-reverse;
         gap: 30px;
-        height: 90vh;
+        padding: 80px;
+        // margin-top: 50px;
     }
 }
 
 .foto-perfil {
     width: 30%;
     min-width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     img {
         padding: 5px;
         background-color: $cor-03;
@@ -29,7 +34,8 @@
         border-radius: 50%;
         width: 100%;
         @include device(small) {
-            width: 90%;
+            width: 80%;
+            
         }
     }
 }

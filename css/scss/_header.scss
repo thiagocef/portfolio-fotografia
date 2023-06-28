@@ -69,6 +69,7 @@ nav {
     gap: 50px;
 
     @include device(small) {
+        flex-direction: column;
         gap: 20px;
     }
     

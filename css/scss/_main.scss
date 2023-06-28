@@ -9,7 +9,7 @@ main {
         gap: 20px;
 
         @include device(small) {
-            gap: 10px;
+            gap: 18px;
         }
         
         img {
